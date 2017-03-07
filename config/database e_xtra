@@ -1,0 +1,6 @@
+#
+production:
+  <<: *default
+  database: jenkinstest_production
+  username: jenkinstest
+  password: <%= ENV['JENKINSTEST_DATABASE_PASSWORD'] %>
